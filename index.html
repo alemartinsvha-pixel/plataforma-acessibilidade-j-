@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acessibilidade Já! — Aplicativos</title>
+<meta name="description" content="Acessibilidade Já! O projeto que chegou pra somar! Aplicativos gratuitos e acessíveis para Windows e Android.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Acessibilidade Já! — início">
+      <img src="assets/logo.png" alt="Acessibilidade Já! — Alessandra Acessibilidade Já">
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#aplicativos">Aplicativos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#sobre-autora">Sobre a autora</a>
+      <a href="#acessibilidade">Acessibilidade</a>
+      <a href="acessibilidade.html">Declaração de acessibilidade</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+<section class="hero" aria-labelledby="titulo">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">ACESSIBILIDADE JÁ!</p>
+      <h1 id="titulo">O projeto que chegou pra somar!</h1>
+      <p class="lead">Tecnologia acessível, gratuita e feita com carinho para que mais pessoas possam criar, estudar, trabalhar e participar.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#aplicativos">Ver aplicativos</a>
+        <a class="button secondary" href="#acessibilidade">Como cuidamos da acessibilidade</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section audio-welcome" aria-labelledby="audio-inicio-title">
+  <div class="wrap narrow">
+    <p class="eyebrow">RECEPÇÃO SONORA</p>
+    <h2 id="audio-inicio-title">Uma chegada com personalidade</h2>
+    <p>Se quiser, ouça o primeiro trecho da nossa recepção sonora. A reprodução é manual para não interromper quem navega com leitor de tela.</p>
+    <audio class="site-audio" controls preload="metadata" aria-label="Trecho de recepção sonora do Acessibilidade Já">
+      <source src="assets/audio/recepcao-inicio.mp3" type="audio/mpeg">
+      Seu navegador não conseguiu carregar o áudio de recepção.
+    </audio>
+  </div>
+</section>
+<section id="aplicativos" class="section" aria-labelledby="apps-title">
+  <div class="wrap">
+    <p class="eyebrow">CATÁLOGO GRATUITO</p>
+    <h2 id="apps-title">Aplicativos</h2>
+    <p class="section-intro">Encontre ferramentas gratuitas de acessibilidade e produtividade. Pesquise pelo nome, categoria, descrição ou recurso e filtre pelo sistema operacional.</p>
+
+    <div class="catalog-controls" aria-label="Pesquisa e filtros do catálogo">
+      <div class="search-box">
+        <label for="busca">Pesquisar aplicativos</label>
+        <input id="busca" type="search" placeholder="Ex.: Estude com Alessa, escritório, textos..." autocomplete="off" aria-describedby="ajuda-busca resultado-busca">
+        <p id="ajuda-busca" class="control-help">A pesquisa considera nome, categoria, descrição e recursos.</p>
+      </div>
+      <div class="filter-controls">
+        <div><label for="filtro-categoria">Filtrar por categoria</label>
+          <select id="filtro-categoria"><option value="">Todas as categorias</option><option value="suítes de escritório">Suítes de escritório</option><option value="educação">Educação</option><option value="leitores de tela">Leitores de tela</option><option value="ampliação">Ampliação de tela</option><option value="ocr">OCR e reconhecimento de texto</option><option value="comunicação">Comunicação</option></select>
+        </div>
+        <div><label for="filtro-plataforma">Filtrar por sistema operacional</label>
+          <select id="filtro-plataforma"><option value="">Todos os sistemas</option><option value="windows">Windows</option><option value="android">Android</option><option value="linux">Linux</option></select>
+        </div>
+      </div>
+      <p id="resultado-busca" class="search-status" role="status" aria-live="polite" aria-atomic="true">1 aplicativo encontrado.</p>
+    </div>
+
+    <div id="lista-aplicativos" class="app-list" aria-label="Resultados do catálogo">
+      <article class="app-card searchable" data-app-name="Estude com Alessa" data-category="suítes de escritório educação" data-platform="windows" data-search="editor de textos trabalhos acadêmicos apresentações acessíveis fotos vídeos teclado exportação docx pdf pptx odt">
+        <div class="app-info">
+          <p class="tag">WINDOWS · SUÍTE DE ESCRITÓRIO</p>
+          <h3>Estude com Alessa</h3>
+          <p>Suíte de escritório gratuita e acessível para escrever textos, produzir trabalhos acadêmicos e criar apresentações com fotos e vídeos.</p>
+          <p>Permite apresentar slides usando o teclado e exportar documentos para DOCX ou PDF e apresentações para PPTX ou ODT.</p>
+          <dl class="app-meta"><div><dt>Versão</dt><dd>2.2.0</dd></div><div><dt>Licença</dt><dd>Gratuito</dd></div><div><dt>Compatibilidade confirmada</dt><dd>Windows 11</dd></div><div><dt>Categoria</dt><dd>Suítes de escritório</dd></div></dl>
+        </div>
+        <div class="app-actions"><a class="button primary" href="apps/estude-com-alessa.html">Ver detalhes e download do Estude com Alessa</a></div>
+      </article>
+    </div>
+    <p id="sem-resultados" class="empty-card" hidden>Nenhum aplicativo corresponde à pesquisa e aos filtros selecionados. Altere os termos ou escolha outras opções.</p>
+    <div class="empty-card catalog-coming"><strong>Novos aplicativos serão adicionados.</strong><p>O catálogo crescerá com ferramentas gratuitas para diferentes necessidades e sistemas operacionais.</p></div>
+  </div>
+</section>
+
+<section class="section alt" aria-labelledby="download-title">
+  <div class="wrap narrow">
+    <p class="eyebrow">DOWNLOADS</p>
+    <h2 id="download-title">Como funciona o download</h2>
+    <ol class="steps">
+      <li><strong>Escolha o aplicativo.</strong> Leia a descrição, a versão, os requisitos e as informações de acessibilidade.</li>
+      <li><strong>Abra a página do aplicativo.</strong> O botão de download ficará sempre identificado com o nome do arquivo e da versão.</li>
+      <li><strong>Baixe pelo link oficial.</strong> Os arquivos serão publicados em um endereço oficial do projeto.</li>
+      <li><strong>Confira a versão.</strong> Depois do download, compare a versão exibida na página com a versão publicada.</li>
+    </ol>
+    <p>Os links de download levam às páginas oficiais de publicação de cada aplicativo. Confira sempre o nome e a versão antes de instalar.</p>
+  </div>
+</section>
+<section id="sobre" class="section alt" aria-labelledby="sobre-title">
+  <div class="wrap narrow">
+    <p class="eyebrow">SOBRE</p>
+    <h2 id="sobre-title">Tecnologia que chegou pra somar</h2>
+    <p>O Acessibilidade Já! nasceu para criar e compartilhar soluções tecnológicas pensando na acessibilidade desde o começo, e não como um recurso colocado somente depois.</p>
+    <p>A ideia é disponibilizar aplicativos gratuitos, explicar de forma simples como cada um funciona e ouvir quem usa para melhorar continuamente os projetos.</p>
+  </div>
+</section>
+<section id="sobre-autora" class="section" aria-labelledby="sobre-autora-title">
+  <div class="wrap narrow">
+    <p class="eyebrow">NOSSA HISTÓRIA</p>
+    <h2 id="sobre-autora-title">Sobre a autora</h2>
+    <p>Oi! Eu me chamo <strong>Alessandra Martins</strong>, sou uma mulher com deficiência visual total e amo tecnologia.</p>
+    <p>Sempre me interessei por essa área. Sou pedagoga e hoje quero contar um pouquinho de como surgiu o Acessibilidade Já.</p>
+    <p>Tudo começou no Instagram, com o nome <strong>Cegueira Não É Barreira</strong>. Depois, o projeto passou a se chamar <strong>Acessibilidade Já</strong>. Com o tempo, expandi essa iniciativa para o YouTube, onde hoje tenho um canal com o título <strong>Alessandra Acessibilidade Já!</strong></p>
+    <p>Minha finalidade é tirar a inclusão do papel e trazê-la para a prática, sem frescuras. Afinal, <strong>acessibilidade é direito e não um favor!</strong></p>
+
+    <h3>Por que meus aplicativos são gratuitos?</h3>
+    <p>Hoje em dia, uma das barreiras relacionadas à acessibilidade, em alguns aspectos, é o custo dos upgrades. Muitas vezes, essa parte pesa no orçamento e acabamos deixando de alcançar nossos objetivos por não termos condições financeiras.</p>
+    <p>Por isso, os aplicativos que venho desenvolvendo buscam trazer mais autonomia e acessibilidade, além de oferecer a liberdade de baixar, testar e utilizar sem custos.</p>
+    <p>Já temos que arcar com muitas coisas e, quando se trata de acessibilidade, o valor comercial não deveria ser uma barreira.</p>
+    <p><strong>Sinta-se à vontade! Aqui, tudo é gratuito para baixar, testar e ajudar você a alcançar seus objetivos.</strong></p>
+    <blockquote class="author-quote"><p>A inclusão não deve ficar no discurso. Ela precisa acontecer na vida real.</p></blockquote>
+    <p>Seja muito bem-vindo(a) ao Acessibilidade Já!</p>
+  </div>
+</section>
+<section id="acessibilidade" class="section" aria-labelledby="acess-title">
+  <div class="wrap">
+    <p class="eyebrow">ACESSIBILIDADE</p>
+    <h2 id="acess-title">Acessibilidade em primeiro lugar</h2>
+    <div class="access-grid">
+      <article class="access-card"><h3>Leitores de tela</h3><p>Textos, títulos, rótulos e estados serão pensados para uma navegação compreensível.</p></article>
+      <article class="access-card"><h3>Teclado</h3><p>A navegação não deve depender exclusivamente do mouse.</p></article>
+      <article class="access-card"><h3>Clareza</h3><p>Downloads, versões e instruções terão nomes e informações objetivas.</p></article>
+      <article class="access-card"><h3>Testes reais</h3><p>A experiência de pessoas com deficiência faz parte da evolução dos projetos.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <p><strong>Acessibilidade Já!</strong> — O projeto que chegou pra somar!</p>
+      <p>Aplicativos gratuitos e acessíveis.</p>
+    </div>
+    <div class="footer-audio" aria-labelledby="audio-final-title">
+      <h2 id="audio-final-title">Até a próxima</h2>
+      <p>Mais um pequeno trecho para fechar a visita com carinho.</p>
+      <audio class="site-audio" controls preload="metadata" aria-label="Trecho final da recepção sonora do Acessibilidade Já">
+        <source src="assets/audio/recepcao-final.mp3" type="audio/mpeg">
+        Seu navegador não conseguiu carregar o áudio final.
+      </audio>
+    </div>
+  </div>
+</footer>
+<script>
+(() => {
+  const busca = document.getElementById('busca');
+  const categoria = document.getElementById('filtro-categoria');
+  const plataforma = document.getElementById('filtro-plataforma');
+  const cards = Array.from(document.querySelectorAll('.searchable[data-app-name]'));
+  const status = document.getElementById('resultado-busca');
+  const semResultados = document.getElementById('sem-resultados');
+  const normalizar = v => (v || '').toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  function filtrar() {
+    const termo=normalizar(busca.value.trim()), cat=normalizar(categoria.value), plat=normalizar(plataforma.value); let n=0;
+    cards.forEach(card => {
+      const texto=normalizar([card.dataset.appName,card.dataset.category,card.dataset.platform,card.dataset.search,card.textContent].join(' '));
+      const ok=(!termo||texto.includes(termo))&&(!cat||normalizar(card.dataset.category).includes(cat))&&(!plat||normalizar(card.dataset.platform).includes(plat));
+      card.hidden=!ok; if(ok)n++;
+    });
+    status.textContent=n===1?'1 aplicativo encontrado.':`${n} aplicativos encontrados.`;
+    semResultados.hidden=n!==0;
+  }
+  busca.addEventListener('input',filtrar); categoria.addEventListener('change',filtrar); plataforma.addEventListener('change',filtrar);
+})();
+</script>
+</body>
+</html>
